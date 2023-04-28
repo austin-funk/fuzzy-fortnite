@@ -36,7 +36,7 @@
 * {
   font-family: "Inter";
   font-style: normal;
-  background-color: #69b9ed;
+  background-color: #9bddff;
   color: black;
 }
 
@@ -99,56 +99,124 @@
   background: #d9d9d9;
   border: 0.1vw solid #000000;
 }
-/*
-#display {
-  height: 90vh;
-  width: 75%;
-  overflow: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none; 
+
+.OptionList {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 9.97vw;
+  height: 34.5vh;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 5vh;
+  font-size: 1.5vw;
+
+  background: #d9d9d9;
+  border: 0.1vw solid #000000;
 }
 
-#display::-webkit-scrollbar {
-  display: none; 
+.ClassOfBox {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 20vw;
+  height: 5vh;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 5vh;
+  font-size: 1.5vw;
+
+  background: #d9d9d9;
+  border: 0.1vw solid #000000;
 }
 
-#inputs {
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  width: 75%;
+.ClassOfButton {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 5.5vw;
+  height: 5vh;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 5vh;
+  font-size: 1.5vw;
+
+  background: #d9d9d9;
+  border: 0.1vw solid #000000;
 }
 
-#prompt {
-  flex-grow: 1;
-  border: none;
+.ClassOfButton:hover {
+  background: #9bddff;
 }
 
-#prompt:focus {
-  outline: none;
+.PathwayDropdown {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 12vw;
+  height: 5vh;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 5vh;
+  font-size: 1vw;
+
+  background: #d9d9d9;
+  border: 0.1vw solid #000000;
 }
 
-#submit {
-  width: 100px;
-  border-radius: 0;
-  background: none;
-  border: 1px solid lightgreen;
-  transition: 0.5s;
+.PathwayOption {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 12vw;
+  height: 5vh;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 5vh;
+  font-size: 1vw;
+
+  background: #d9d9d9;
+  border: 0.1vw solid #000000;
 }
 
-#submit:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  color: red;
-  border-color: red;
+.SearchBox {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 20vw;
+  height: 5vh;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 5vh;
+  font-size: 1.5vw;
+
+  background: #d9d9d9;
+  border: 0.1vw solid #000000;
 }
 
-td,
-th {
-  padding: 5px 10px;
-  border: 1px solid lightgreen;
+.SearchDropdown {
+  list-style-type: none;
 }
 
-table {
-  margin: 10px 0;
-} */
+.SearchOption {
+  box-sizing: border-box;
+  list-style-type: none;
+
+  position: absolute;
+  width: 20vw;
+  height: 5vh;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 5vh;
+  font-size: 1.5vw;
+
+  background: #d9d9d9;
+  border: 0.1vw solid #000000;
+}

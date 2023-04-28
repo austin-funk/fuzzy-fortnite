@@ -7,6 +7,8 @@ interface SemYearProps {
   grad_year: number;
   classes: Array<Array<String>>;
   setClasses: (data: Array<Array<String>>) => void;
+  currClass: String;
+  setCurrClass: (data: String) => void;
 }
 
 function position(back: number) {
@@ -34,7 +36,7 @@ export default function SemBackground(props: SemYearProps) {
 
   return (
     <div className="SemBackground" style={position(props.num)}>
-      <SemYearButton year={props.grad_year + 0.5 * (props.num - 8)} />
+      <SemYearButton year={props.grad_year + 0.5 * (props.num - 7)} />
       {numsMapArr.map(({ key, value }) => (
         <ClassBox
           classes={props.classes}

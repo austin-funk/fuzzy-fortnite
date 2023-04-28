@@ -1,10 +1,12 @@
 import { useState } from "react";
-import SemYearButton from "./SemYearButton";
-import ClassBox from "./ClassBox";
+import SemYearButton from "../schedule/SemYearButton";
+import ClassBox from "../schedule/ClassBox";
 
 interface ClassOptionProps {
   classes: Array<Array<String>>;
   setClasses: (data: Array<Array<String>>) => void;
+  currClass: String;
+  setCurrClass: (data: String) => void;
 }
 
 function position(back: number) {
@@ -33,6 +35,7 @@ export default function ClassOption(props: ClassOptionProps) {
       >
         Avoid
       </button>
+      <div className="OptionList" style={{ left: "0vw", top: "5vh" }}></div>
 
       <button
         className="OptionButton"
@@ -41,6 +44,7 @@ export default function ClassOption(props: ClassOptionProps) {
       >
         Completed
       </button>
+      <div className="OptionList" style={{ left: "9.9vw", top: "5vh" }}></div>
 
       <button
         className="OptionButton"
@@ -49,18 +53,7 @@ export default function ClassOption(props: ClassOptionProps) {
       >
         Take
       </button>
-      <div
-        className="OptionList"
-        style={{ left: "0.375vw", top: "0.5vh" }}
-      ></div>
-      <div
-        className="OptionList"
-        style={{ left: "0.375vw", top: "0.5vh" }}
-      ></div>
-      <div
-        className="OptionList"
-        style={{ left: "0.375vw", top: "0.5vh" }}
-      ></div>
+      <div className="OptionList" style={{ left: "19.8vw", top: "5vh" }}></div>
     </div>
   );
 }
